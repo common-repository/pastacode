@@ -1,0 +1,232 @@
+/**
+* prism.js default theme for JavaScript,CSS and HTML
+* Based on dabblet (http://dabblet.com)
+* @author Lea Verou
+*/
+
+.code-embed-wrapper code[class*="language-"],
+.code-embed-wrapper pre[class*="language-"],
+#bbpress-forums .code-embed-wrapper code[class*="language-"],
+#bbpress-forums .code-embed-wrapper pre[class*="language-"] {
+	color: black;
+	text-shadow: 0 1px white;
+	font-family: Consolas, Monaco, 'Andale Mono', monospace;
+	direction: ltr;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+	background: transparent;
+	font-size: inherit;
+	padding: 0;
+	margin:0;
+}
+.code-embed-wrapper pre[class*="language-"]::-moz-selection,
+#bbpress-forums .code-embed-wrapper pre[class*="language-"]::-moz-selection,
+.code-embed-wrapper code[class*="language-"]::-moz-selection,
+#bbpress-forums .code-embed-wrapper code[class*="language-"]::-moz-selection {
+	text-shadow: none;
+	background: #b3d4fc;
+}
+.code-embed-wrapper pre[class*="language-"]::selection,
+#bbpress-forums .code-embed-wrapper pre[class*="language-"]::selection,
+.code-embed-wrapper code[class*="language-"]::selection,
+#bbpress-forums .code-embed-wrapper code[class*="language-"]::selection {
+	text-shadow: none;
+	background: #b3d4fc;
+}
+@media print {
+	code[class*="language-"],
+	pre[class*="language-"] {
+		text-shadow: none;
+	}
+}
+
+/* Code blocks */
+.code-embed-wrapper pre[class*="language-"],
+#bbpress-forums .code-embed-wrapper pre[class*="language-"] {
+	padding: 1em;
+	margin: 0;
+	overflow: auto;
+	max-width:100%;
+	border:none;
+}
+.code-embed-wrapper :not(pre) > code[class*="language-"],
+.code-embed-wrapper pre[class*="language-"],
+#bbpress-forums .code-embed-wrapper :not(pre) > code[class*="language-"],
+#bbpress-forums .code-embed-wrapper pre[class*="language-"] {
+	background: #f5f2f0;
+}
+
+/* Inline code */
+.code-embed-wrapper :not(pre) > code[class*="language-"],
+#bbpress-forums .code-embed-wrapper :not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+}
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: slategray;
+}
+.token.punctuation {
+	color: #999;
+}
+.namespace {
+	opacity: .7;
+}
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol,
+.token.deleted {
+	color: #905;
+}
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+	color: #690;
+}
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+	color: #a67f59;
+	background: hsla(0, 0%, 100%, .5);
+}
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+	color: #07a;
+}
+.token.function {
+	color: #DD4A68;
+}
+.token.regex,
+.token.important,
+.token.variable {
+	color: #e90;
+}
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+.token.entity {
+	cursor: help;
+}
+
+/* Pastacode add */
+.code-embed-wrapper,
+#bbpress-forums .code-embed-wrapper {
+	position: relative;
+	padding: 1.5em 0;
+}
+.code-embed-wrapper  .code-embed-infos,
+#bbpress-forums .code-embed-wrapper .code-embed-infos {
+	position: relative;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	display: block;
+	background: #D8D8D8;
+	overflow: hidden;
+}
+.code-embed-wrapper .code-embed-infos a,
+.code-embed-wrapper .code-embed-infos span,
+#bbpress-forums .code-embed-wrapper .code-embed-infos a,
+#bbpress-forums .code-embed-wrapper .code-embed-infos span {
+	color: #41455A;
+	padding: .25em 1em;
+	font-family: arial, helvetica, sans-serif;
+	text-decoration: none;
+	box-shadow:none;
+	border-top: 1px solid #d8d8d8;
+}
+.code-embed-wrapper pre + .code-embed-infos a,
+.code-embed-wrapper pre + .code-embed-infos span,
+#bbpress-forums .code-embed-wrapper pre + .code-embed-infos a,
+#bbpress-forums .code-embed-wrapper pre + .code-embed-infos span {
+	border-bottom: 1px solid #d8d8d8;
+	border-top: 0;
+}
+.code-embed-wrapper .code-embed-infos a:hover,
+.code-embed-wrapper .code-embed-infos a:focus,
+.code-embed-wrapper .code-embed-infos a:active,
+#bbpress-forums .code-embed-wrapper .code-embed-infos a:hover,
+#bbpress-forums .code-embed-wrapper .code-embed-infos a:focus,
+#bbpress-forums .code-embed-wrapper .code-embed-infos a:active {
+	color: #28406C;
+	border-top: 1px solid #28406C;
+	text-decoration:none;
+	box-shadow:none;
+}
+
+.code-embed-wrapper pre + .code-embed-infos a:hover,
+.code-embed-wrapper pre + .code-embed-infos a:focus,
+.code-embed-wrapper pre + .code-embed-infos a:active,
+#bbpress-forums .code-embed-wrapper pre + .code-embed-infos a:hover,
+#bbpress-forums .code-embed-wrapper pre + .code-embed-infos a:focus,
+#bbpress-forums .code-embed-wrapper pre + .code-embed-infos a:active {
+	color: #28406C;
+	border-top:0;
+	border-bottom: 1px solid #28406C;
+}
+.code-embed-wrapper .code-embed-name,
+#bbpress-forums .code-embed-wrapper .code-embed-name {
+	float: left;
+}
+.code-embed-wrapper .code-embed-raw,
+#bbpress-forums .code-embed-wrapper .code-embed-raw {
+	float: right;
+}
+
+/* Plugin styles:Line Numbers */
+.code-embed-wrapper pre[class*="language-"].line-numbers,
+#bbpress-forums .code-embed-wrapper pre[class*="language-"].line-numbers {
+	padding-left: 0;
+	padding-right: 0;
+}
+.code-embed-wrapper pre[class*="language-"].line-numbers code,
+#bbpress-forums .code-embed-wrapper pre[class*="language-"].line-numbers code {
+	padding-left: 3.8em;
+	display:block;
+}
+.code-embed-wrapper pre[class*="language-"].line-numbers .line-numbers-rows
+#bbpress-forums .code-embed-wrapper pre[class*="language-"].line-numbers .line-numbers-rows {
+	left: 0;
+}
+
+.code-embed-wrapper code.code-embed-code,
+#bbpress-forums .code-embed-wrapper code.code-embed-code{
+	position:relative;
+	display:block;
+}
+
+.code-embed-wrapper code.code-embed-code ~ .line-highlight,
+#bbpress-forums .code-embed-wrapper code.code-embed-code ~ .line-highlight{
+	margin:1em -1em;
+}
+
+.code-embed-wrapper .line-numbers code.code-embed-code ~ .line-highlight,
+#bbpress-forums .code-embed-wrapper .line-numbers code.code-embed-code ~ .line-highlight{
+	margin:1em 0;
+}

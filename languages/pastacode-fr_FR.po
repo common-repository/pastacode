@@ -1,0 +1,329 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: http://wordpress.org/support/plugin/pastacode\n"
+"POT-Creation-Date: 2016-12-10 13:38+0000\n"
+"PO-Revision-Date: 2016-12-10 20:47+0000\n"
+"Last-Translator: pastacode2 <wily@wabeo.fr>\n"
+"Language-Team: French (France)\n"
+"Language: fr-FR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco - https://localise.biz/\n"
+"Plural-Forms: nplurals=2; plural=n > 1"
+
+#: pastacode.php:542
+msgid "Activate Pastacode for comments"
+msgstr "Activer Pastacode pour les commentaires"
+
+#: pastacode.php:552
+msgid "Experimental mode, can slow down website on front-end..."
+msgstr ""
+"Fonctionnalité expérimentale, peut légèrement freiner le chargement du site."
+
+#: pastacode.php:720
+msgid "Write code"
+msgstr "Saisir du code"
+
+#: pastacode.php:721 pastacode.php:722 pastacode.php:723 pastacode.php:724
+#: pastacode.php:725 pastacode.php:726
+#, php-format
+msgid "Import code (%s)"
+msgstr "Importer du code (%s)"
+
+#: pastacode.php:764
+msgid "Filename (with extension)"
+msgstr "Nom du fichier (avec extension)"
+
+#: pastacode.php:895
+msgid "Insert a code"
+msgstr "Insérer un code"
+
+#. URI of the plugin
+msgid "http://pastacode.wabeo.fr"
+msgstr "http://pastacode.wabeo.fr"
+
+#. Author URI of the plugin
+msgid "https://wabeo.fr"
+msgstr "https://wabeo.fr"
+
+# if( isset( $source[ 'url' ] ) )
+# $output[] = '<a href="' . esc_url( $source[ 'url' ] ) . '" title="' . sprintf( esc_attr__( 'See %s', 'pastacode' ), $source[ 'name' ] ) . '" target="_blank" class="code-embed-name">' . esc_html( $source[ 'name' ] ) . '</a>';
+# if( isset( $source[ 'raw' ] ) )
+#: pastacode.php:73
+#, php-format
+msgid "See %s"
+msgstr "Afficher %s"
+
+#: pastacode.php:76
+msgid "view raw"
+msgstr "affichage brut"
+
+# add_settings_section( 'pastacode_setting_section',
+# __( 'General Settings', 'pastacode' ),
+# '__return_false',
+#: pastacode.php:450
+msgid "General Settings"
+msgstr "Réglages généraux"
+
+# add_settings_field( 'pastacode_cache_duration',
+# __( 'Caching duration', 'pastacode' ),
+# 'pastacode_setting_callback_function',
+#: pastacode.php:455
+msgid "Caching duration"
+msgstr "Durée du cache"
+
+# DAY_IN_SECONDS       => __( 'Once Daily' ),
+# DAY_IN_SECONDS * 7   => __( 'Once Weekly', 'pastacode' ),
+# 0                    => __( 'Never reload', 'pastacode' ),
+#: pastacode.php:464
+msgid "Once Weekly"
+msgstr "Une fois par semaine"
+
+# DAY_IN_SECONDS * 7   => __( 'Once Weekly', 'pastacode' ),
+# 0                    => __( 'Never reload', 'pastacode' ),
+# -1                   => __( 'No cache (dev mode)', 'pastacode' ),
+#: pastacode.php:465
+msgid "Never reload"
+msgstr "Ne jamais recharger"
+
+# 0                    => __( 'Never reload', 'pastacode' ),
+# -1                   => __( 'No cache (dev mode)', 'pastacode' ),
+# ),
+#: pastacode.php:466
+msgid "No cache (dev mode)"
+msgstr "Pas de cache (mode dev)"
+
+# add_settings_field( 'pastacode_style',
+# __( 'Syntax Coloration Style', 'pastacode' ),
+# 'pastacode_setting_callback_function',
+#: pastacode.php:472
+msgid "Syntax Coloration Style"
+msgstr "Thème de coloration"
+
+#: pastacode.php:490
+msgid "Code description location"
+msgstr "Position de la description du code"
+
+#: pastacode.php:496
+msgid "Below code"
+msgstr "En dessous du code"
+
+#: pastacode.php:497
+msgid "Above code"
+msgstr "Au dessus du code"
+
+# add_settings_field( 'pastacode_linenumbers',
+# __( 'Show line numbers', 'pastacode' ),
+# 'pastacode_setting_callback_function',
+#: pastacode.php:503
+msgid "Show line numbers"
+msgstr "Afficher les numéros de ligne"
+
+# 'options' => array(
+# 'y' => __( 'Yes', 'pastacode' ),
+# 'n' => __( 'No', 'pastacode' ),
+#: pastacode.php:509 pastacode.php:522 pastacode.php:535 pastacode.php:548
+msgid "Yes"
+msgstr "Oui"
+
+# 'y' => __( 'Yes', 'pastacode' ),
+# 'n' => __( 'No', 'pastacode' ),
+# ),
+#: pastacode.php:510 pastacode.php:523 pastacode.php:536 pastacode.php:549
+msgid "No"
+msgstr "Non"
+
+# add_settings_field( 'pastacode_showinvisible',
+# __( 'Show invisible chars', 'pastacode' ),
+# 'pastacode_setting_callback_function',
+#: pastacode.php:516
+msgid "Show invisible chars"
+msgstr "Afficher les caractères invisibles"
+
+#: pastacode.php:529
+msgid "Show preview on editor"
+msgstr "Prévisualiser dans l'éditeur"
+
+# add_settings_section( 'pastacode_setting_section',
+# __( 'General Settings', 'pastacode' ),
+# '__return_false',
+#: pastacode.php:557
+msgid "Code editor settings"
+msgstr "Réglage de l'éditeur de code"
+
+#: pastacode.php:562
+msgid "Editor appareance"
+msgstr "Thème de l'éditeur"
+
+#: pastacode.php:623
+msgid "Purge cache"
+msgstr "Vider le cache"
+
+# ?>
+# <h3 class="media-title"><?php _e('Past\'a code', 'pastacode'); ?></h3>
+# 
+#: pastacode.php:707
+msgid "Past'a code"
+msgstr "Past'a code"
+
+# <select name="pastacode-provider" id="pastacode-provider">
+# <optgroup label="<?php _e( 'Select a provider', 'pastacode' ); ?>">
+# <?php
+#: pastacode.php:708
+msgid "Select a provider"
+msgstr "Choisir un fournisseur"
+
+# <select name="pastacode-lang" id="pastacode-lang">
+# <optgroup label="<?php _e( 'Select a syntax', 'pastacode' ); ?>">
+# <?php
+#: pastacode.php:709 pastacode.php:775
+msgid "Select a syntax"
+msgstr "Choisir une syntaxe"
+
+#: pastacode.php:711
+msgid "Manual Code Editor"
+msgstr "Édition de code manuel"
+
+#: pastacode.php:712
+msgid "Lines:"
+msgstr "Lignes :"
+
+#: pastacode.php:713
+msgid "Title:"
+msgstr "Titre :"
+
+#: pastacode.php:714
+msgid "Syntax:"
+msgstr "Syntaxe :"
+
+#: pastacode.php:715
+msgid "Provider:"
+msgstr "Fournisseur :"
+
+# 'pastebin'  => 'Pastebin',
+# 'file'      => __( 'File from uploads', 'pastacode' ),
+# );
+#: pastacode.php:726
+msgid "File from uploads"
+msgstr "Fichier dans la bibliothèque"
+
+# <?php
+# $fields = array('username' => array( 'classes' => array( 'github','bitbucket' ), 'label' => __('User of repository', 'pastacode'), 'placeholder' => __( 'John Doe', 'pastacode' ), 'name' => 'user' ),
+# 'repository' => array( 'classes' => array( 'github','bitbucket' ), 'label' => __('Repository', 'pastacode'), 'placeholder' => __( 'pastacode', 'pastacode' ), 'name' => 'repos' ),
+#: pastacode.php:756
+msgid "User of repository"
+msgstr "Propriétaire du dépot"
+
+# <?php
+# $fields = array('username' => array( 'classes' => array( 'github','bitbucket' ), 'label' => __('User of repository', 'pastacode'), 'placeholder' => __( 'John Doe', 'pastacode' ), 'name' => 'user' ),
+# 'repository' => array( 'classes' => array( 'github','bitbucket' ), 'label' => __('Repository', 'pastacode'), 'placeholder' => __( 'pastacode', 'pastacode' ), 'name' => 'repos' ),
+#: pastacode.php:756
+msgid "John Doe"
+msgstr "John Doe"
+
+# $fields = array('username' => array( 'classes' => array( 'github','bitbucket' ), 'label' => __('User of repository', 'pastacode'), 'placeholder' => __( 'John Doe', 'pastacode' ), 'name' => 'user' ),
+# 'repository' => array( 'classes' => array( 'github','bitbucket' ), 'label' => __('Repository', 'pastacode'), 'placeholder' => __( 'pastacode', 'pastacode' ), 'name' => 'repos' ),
+# 'path-id' => array( 'classes' => array( 'gist','pastebin' ), 'label' => __('Code ID', 'pastacode'), 'placeholder' => '123456', 'name' => 'path_id' ),
+#: pastacode.php:757
+msgid "Repository"
+msgstr "Dépot"
+
+# $fields = array('username' => array( 'classes' => array( 'github','bitbucket' ), 'label' => __('User of repository', 'pastacode'), 'placeholder' => __( 'John Doe', 'pastacode' ), 'name' => 'user' ),
+# 'repository' => array( 'classes' => array( 'github','bitbucket' ), 'label' => __('Repository', 'pastacode'), 'placeholder' => __( 'pastacode', 'pastacode' ), 'name' => 'repos' ),
+# 'path-id' => array( 'classes' => array( 'gist','pastebin' ), 'label' => __('Code ID', 'pastacode'), 'placeholder' => '123456', 'name' => 'path_id' ),
+#: pastacode.php:757
+msgid "pastacode"
+msgstr "pastacode"
+
+# 'repository' => array( 'classes' => array( 'github','bitbucket' ), 'label' => __('Repository', 'pastacode'), 'placeholder' => __( 'pastacode', 'pastacode' ), 'name' => 'repos' ),
+# 'path-id' => array( 'classes' => array( 'gist','pastebin' ), 'label' => __('Code ID', 'pastacode'), 'placeholder' => '123456', 'name' => 'path_id' ),
+# 'path-repo' => array( 'classes' => array( 'github','bitbucket' ), 'label' => __('File path inside the repository', 'pastacode'), 'placeholder' => __( 'bin/foobar.php', 'pastebin' ), 'name' => 'path_id'  ),
+#: pastacode.php:758
+msgid "Code ID"
+msgstr "ID du code"
+
+# 'path-id' => array( 'classes' => array( 'gist','pastebin' ), 'label' => __('Code ID', 'pastacode'), 'placeholder' => '123456', 'name' => 'path_id' ),
+# 'path-repo' => array( 'classes' => array( 'github','bitbucket' ), 'label' => __('File path inside the repository', 'pastacode'), 'placeholder' => __( 'bin/foobar.php', 'pastebin' ), 'name' => 'path_id'  ),
+# 'path-up' => array( 'classes' => array( 'file' ), 'label' => sprintf( __('File path relative to %s', 'pastacode'), esc_html( WP_CONTENT_URL ) ), 'placeholder' => date( 'Y/m' ).'/source.txt', 'name' => 'path_id'  ),
+#: pastacode.php:759
+msgid "File path inside the repository"
+msgstr "Chemin du fichier dans le dépot"
+
+# 'path-repo' => array( 'classes' => array( 'github','bitbucket' ), 'label' => __('File path inside the repository', 'pastacode'), 'placeholder' => __( 'bin/foobar.php', 'pastebin' ), 'name' => 'path_id'  ),
+# 'path-up' => array( 'classes' => array( 'file' ), 'label' => sprintf( __('File path relative to %s', 'pastacode'), esc_html( WP_CONTENT_URL ) ), 'placeholder' => date( 'Y/m' ).'/source.txt', 'name' => 'path_id'  ),
+# 'revision' => array( 'classes' => array( 'github','bitbucket' ), 'label' => __('Revision', 'pastacode'), 'placeholder' => __('master', 'pastacode'), 'name' => 'revision'  ),
+#: pastacode.php:760
+#, php-format
+msgid "File path relative to %s"
+msgstr "Chemin du fichier relatif à %s"
+
+# 'path-up' => array( 'classes' => array( 'file' ), 'label' => sprintf( __('File path relative to %s', 'pastacode'), esc_html( WP_CONTENT_URL ) ), 'placeholder' => date( 'Y/m' ).'/source.txt', 'name' => 'path_id'  ),
+# 'revision' => array( 'classes' => array( 'github','bitbucket' ), 'label' => __('Revision', 'pastacode'), 'placeholder' => __('master', 'pastacode'), 'name' => 'revision'  ),
+# 'manual' => array( 'classes' => array( 'manual' ), 'label' => __('Code', 'pastacode'), 'name' => 'manual'  ),
+#: pastacode.php:761
+msgid "Revision"
+msgstr "Révision"
+
+# 'path-up' => array( 'classes' => array( 'file' ), 'label' => sprintf( __('File path relative to %s', 'pastacode'), esc_html( WP_CONTENT_URL ) ), 'placeholder' => date( 'Y/m' ).'/source.txt', 'name' => 'path_id'  ),
+# 'revision' => array( 'classes' => array( 'github','bitbucket' ), 'label' => __('Revision', 'pastacode'), 'placeholder' => __('master', 'pastacode'), 'name' => 'revision'  ),
+# 'manual' => array( 'classes' => array( 'manual' ), 'label' => __('Code', 'pastacode'), 'name' => 'manual'  ),
+#: pastacode.php:761
+msgid "master"
+msgstr "master"
+
+# 'revision' => array( 'classes' => array( 'github','bitbucket' ), 'label' => __('Revision', 'pastacode'), 'placeholder' => __('master', 'pastacode'), 'name' => 'revision'  ),
+# 'manual' => array( 'classes' => array( 'manual' ), 'label' => __('Code', 'pastacode'), 'name' => 'manual'  ),
+# 'message' => array( 'classes' => array( 'manual' ), 'label' => __('Code title', 'pastacode'),'placeholder' => __('title', 'pastacode'), 'name' => 'message'  ),
+#: pastacode.php:762
+msgid "Code"
+msgstr "Code"
+
+# 'manual' => array( 'classes' => array( 'manual' ), 'label' => __('Code', 'pastacode'), 'name' => 'manual'  ),
+# 'message' => array( 'classes' => array( 'manual' ), 'label' => __('Code title', 'pastacode'),'placeholder' => __('title', 'pastacode'), 'name' => 'message'  ),
+# );
+#: pastacode.php:763
+msgid "Code title"
+msgstr "Titre du code"
+
+# 'manual' => array( 'classes' => array( 'manual' ), 'label' => __('Code', 'pastacode'), 'name' => 'manual'  ),
+# 'message' => array( 'classes' => array( 'manual' ), 'label' => __('Code title', 'pastacode'),'placeholder' => __('title', 'pastacode'), 'name' => 'message'  ),
+# );
+#: pastacode.php:763
+msgid "title"
+msgstr "Titre"
+
+# <tr valign="top" class="field">
+# <th class="label" scope="row"><label for="pastacode-highlight"><span class="alignleft"><?php _e('Highlited lines', 'pastacode'); ?></span></label></th>
+# <td>
+#: pastacode.php:765
+msgid "Highlited lines"
+msgstr "Lignes soulignées"
+
+# <tr valign="top" class="field">
+# <th class="label" scope="row"><label for="pastacode-lines"><span class="alignleft"><?php _e('Visibles lines', 'pastacode'); ?></span></label></th>
+# <td>
+#: pastacode.php:766
+msgid "Visibles lines"
+msgstr "Lignes visibles"
+
+#: pastacode.php:891
+msgid "Expand editor"
+msgstr "Étendre l'éditeur"
+
+#. Plugin Name of the plugin/theme
+msgid "Pastacode"
+msgstr "Pastacode"
+
+#. Description of the plugin/theme
+msgid ""
+"Embed GitHub, Gist, Pastebin, Bitbucket or whatever remote files and even "
+"your own code by copy/pasting."
+msgstr ""
+"Intégrer GitHub, Gist, Pastebin, Bitbucket ou vos fichiers à distance et "
+"même votre propre code par simple copier/coller."
+
+#. Author of the plugin/theme
+msgid "Willy Bahuaud"
+msgstr "Willy Bahuaud"

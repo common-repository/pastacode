@@ -1,0 +1,74 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "wab/pastacode",
+	"version": "0.1.0",
+	"title": "Pastacode",
+	"category": "text",
+	"icon": "editor-code",
+	"description": "Paste a code from github, bitbucket, gitlab, or write it here!",
+	"supports": {
+		"html": false,
+		"alignWide": true,
+		"align": ["full", "wide"]
+	},
+	"textdomain": "pastacode",
+	"editorScript": "pastacode-editor-script",
+	"editorStyle": "pastacode-editor-style",
+	"style": "file:./style-index.css",
+	"example": {
+        "attributes": {
+            "manual": "<div>\n\t<p>\n\t\tdemo\n\t<p>\n</div>",
+			"lang":"markup",
+			"provider":"manual"
+        }
+    },
+	"attributes":{
+		"provider":{
+			"type":"string",
+			"default":"manual"
+		},
+		"highlight":{
+			"type":"string"
+		},
+		"lines":{
+			"type":"string"
+		},
+		"lang":{
+			"type":"string",
+			"default":"markup"
+		},
+		"file":{
+			"type":"string",
+			"default":""
+		},
+		"message":{
+			"type":"string",
+			"default":""
+		},
+		"revision":{
+			"type":"string",
+			"default":""
+		},
+		"path_id":{
+			"type":"string",
+			"default":""
+		},
+		"repos":{
+			"type":"string",
+			"default":""
+		},
+		"user":{
+			"type":"string",
+			"default":""
+		},
+		"linenumbers":{
+			"type":"boolean",
+			"default":"1"
+		},
+		"manual": {
+			"type": "string",
+			"default":""
+		}
+	}
+}

@@ -1,0 +1,211 @@
+/**
+* prism.js Funky theme
+* Based on “Polyfilling the gaps” talk slides http://lea.verou.me/polyfilling-the-gaps/
+* @author Lea Verou
+*/
+
+.code-embed-wrapper code[class*="language-"],
+.code-embed-wrapper pre[class*="language-"],
+#bbpress-forums .code-embed-wrapper code[class*="language-"],
+#bbpress-forums .code-embed-wrapper pre[class*="language-"] {
+	font-family: Consolas, Monaco, 'Andale Mono', monospace;
+	direction: ltr;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+	background: transparent;
+	font-size: inherit;
+	padding: 0;
+	margin:0;
+}
+
+/* Code blocks */
+.code-embed-wrapper pre[class*="language-"],
+#bbpress-forums .code-embed-wrapper pre[class*="language-"] {
+	padding: .4em .8em;
+	margin: 0;
+	overflow: auto;
+	background: url('data:image/svg+xml;charset=utf-8,<svg%20version%3D"1.1"%20xmlns%3D"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg"%20width%3D"100"%20height%3D"100"%20fill%3D"rgba(0%2C0%2C0%2C.2)">%0D%0A<polygon%20points%3D"0%2C50%2050%2C0%200%2C0"%20%2F>%0D%0A<polygon%20points%3D"0%2C100%2050%2C100%20100%2C50%20100%2C0"%20%2F>%0D%0A<%2Fsvg>');
+	background-size: 1em 1em;
+	max-width:100%;
+	border:none;
+}
+.code-embed-wrapper code[class*="language-"],
+#bbpress-forums .code-embed-wrapper code[class*="language-"] {
+	background: black;
+	color: white;
+	box-shadow: -.3em 0 0 .3em black, .3em 0 0 .3em black;
+}
+
+.code-embed-wrapper .code-embed-code .line-highlight:before, 
+.code-embed-wrapper .code-embed-code .line-highlight[data-end]:after,
+#bbpress-forums .code-embed-wrapper .code-embed-code .line-highlight:before, 
+#bbpress-forums .code-embed-wrapper .code-embed-code .line-highlight[data-end]:after{
+	background-color:hsl(213,100%,60%);
+}
+
+.code-embed-wrapper .code-embed-code .line-highlight,
+#bbpress-forums .code-embed-wrapper .code-embed-code .line-highlight{
+	background: hsla(216, 35%, 70%,.12);
+	background: -moz-linear-gradient(left, hsla(216, 35%, 70%,.24) 70%, hsla(205, 24%, 58%,0));
+	background: -webkit-linear-gradient(left, hsla(216, 35%, 70%, 0.24) 70%, hsla(205, 24%, 58%, 0));
+	background: -o-linear-gradient(left, hsla(216, 35%,70%,.24) 70%, hsla(205, 24%, 58%,0));
+	background: linear-gradient(left, hsla(216, 35%,70%,.24) 70%, hsla(205, 24%, 58%,0));
+}
+
+/* Inline code */
+.code-embed-wrapper :not(pre) > code[class*="language-"],
+#bbpress-forums .code-embed-wrapper :not(pre) > code[class*="language-"] {
+	padding: .2em;
+	border-radius: .3em;
+	box-shadow: none;
+}
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: #aaa;
+}
+.token.punctuation {
+	color: #999;
+}
+.namespace {
+	opacity: .7;
+}
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol {
+	color: #0cf;
+}
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin {
+	color: yellow;
+}
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.toke.variable,
+.token.inserted {
+	color: yellowgreen;
+}
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+	color: deeppink;
+}
+.token.regex,
+.token.important {
+	color: orange;
+}
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+.token.entity {
+	cursor: help;
+}
+.token.deleted {
+	color: red;
+}
+
+/* Pastacode add */
+.code-embed-wrapper,
+#bbpress-forums .code-embed-wrapper {
+	position: relative;
+	padding: 1.25em 0;
+}
+.code-embed-wrapper .code-embed-infos,
+#bbpress-forums .code-embed-wrapper .code-embed-infos {
+	position: relative;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	display: block;
+	text-align: left;
+	margin-bottom: -1px;
+}
+.code-embed-wrapper pre + .code-embed-infos,
+#bbpress-forums .code-embed-wrapper pre + .code-embed-infos {
+	margin-bottom: 0;
+}
+.code-embed-wrapper .code-embed-infos a,
+.code-embed-wrapper .code-embed-infos span,
+#bbpress-forums .code-embed-wrapper .code-embed-infos a,
+#bbpress-forums .code-embed-wrapper .code-embed-infos span {
+	color: #FFF;
+	padding: .25em 1em;
+	font-family: verdana, helvetica, sans-serif;
+	text-decoration: none;
+	box-shadow:none;
+	background: deeppink;
+	margin-right: 1em;
+	display: inline-block;
+}
+.code-embed-wrapper .code-embed-infos a:hover,
+.code-embed-wrapper .code-embed-infos a:focus,
+.code-embed-wrapper .code-embed-infos a:active,
+#bbpress-forums .code-embed-wrapper .code-embed-infos a:hover,
+#bbpress-forums .code-embed-wrapper .code-embed-infos a:focus,
+#bbpress-forums .code-embed-wrapper .code-embed-infos a:active {
+	background: black;
+	text-decoration: none;
+	box-shadow:none;
+}
+
+/* Plugin styles:Line Numbers */
+.code-embed-wrapper pre[class*="language-"].line-numbers,
+#bbpress-forums .code-embed-wrapper pre[class*="language-"].line-numbers {
+	padding-left: 0;
+	padding-right: 0;
+}
+.code-embed-wrapper pre[class*="language-"].line-numbers code,
+#bbpress-forums .code-embed-wrapper pre[class*="language-"].line-numbers code {
+	/*padding-left: 3.8em;*/
+	display:inline;
+	left:3.8em;
+}
+.code-embed-wrapper pre[class*="language-"].line-numbers .line-numbers-rows,
+#bbpress-forums .code-embed-wrapper pre[class*="language-"].line-numbers .line-numbers-rows {
+	left: -3.8em;
+}
+
+.code-embed-wrapper code.code-embed-code,
+#bbpress-forums .code-embed-wrapper code.code-embed-code{
+	position:relative;
+	display:inline;
+	border-radius:0;
+}
+
+.code-embed-wrapper code.code-embed-code ~ .line-highlight,
+#bbpress-forums .code-embed-wrapper code.code-embed-code ~ .line-highlight{
+	margin-top:.4em !important;
+	right:auto;
+	background: hsla(200, 20%, 50%,.4) !important;
+    background: linear-gradient(to right, hsla(200, 20%, 50%,.4) 70%, hsla(200, 20%, 50%,0)) !important;
+}
+
+.code-embed-wrapper .line-numbers code.code-embed-code ~ .line-highlight,
+#bbpress-forums .code-embed-wrapper .line-numbers code.code-embed-code ~ .line-highlight{
+	margin:0;
+	left:-3.8em;
+}

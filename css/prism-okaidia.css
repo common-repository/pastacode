@@ -1,0 +1,217 @@
+/**
+* okaidia theme for JavaScript,CSS and HTML
+* Loosely based on Monokai textmate theme by http://www.monokai.nl/
+* @author ocodia
+*/
+
+.code-embed-wrapper code[class*="language-"],
+.code-embed-wrapper pre[class*="language-"],
+#bbpress-forums .code-embed-wrapper code[class*="language-"],
+#bbpress-forums .code-embed-wrapper pre[class*="language-"] {
+	color: #f8f8f2;
+	text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+	font-family: Consolas, Monaco, 'Andale Mono', monospace;
+	direction: ltr;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+	background: transparent;
+	font-size: inherit;
+	padding: 0;
+	margin:0;
+}
+
+/* Code blocks */
+.code-embed-wrapper pre[class*="language-"],
+#bbpress-forums .code-embed-wrapper pre[class*="language-"] {
+	padding: 1em;
+	margin: 0;
+	overflow: auto;
+	border-radius: 0.3em;
+	max-width:100%;
+	border:none;
+}
+.code-embed-wrapper :not(pre) > code[class*="language-"],
+.code-embed-wrapper pre[class*="language-"],
+#bbpress-forums .code-embed-wrapper :not(pre) > code[class*="language-"],
+#bbpress-forums .code-embed-wrapper pre[class*="language-"] {
+	background: #272822;
+}
+
+.code-embed-wrapper .code-embed-code ~ .line-highlight:before, 
+.code-embed-wrapper .code-embed-code ~ .line-highlight[data-end]:after,
+#bbpress-forums .code-embed-wrapper .code-embed-code ~ .line-highlight:before, 
+#bbpress-forums .code-embed-wrapper .code-embed-code ~ .line-highlight[data-end]:after{
+	background-color:#37CCE8;
+}
+
+.code-embed-wrapper .code-embed-code ~ .line-highlight,
+#bbpress-forums .code-embed-wrapper .code-embed-code ~ .line-highlight{
+	background: hsla(216, 35%, 70%,.1);
+	background: -moz-linear-gradient(left, hsla(216, 35%, 40%,.15) 70%, hsla(205, 24%, 58%,0));
+	background: -webkit-linear-gradient(left, hsla(216, 35%, 40%, 0.15) 70%, hsla(205, 24%, 58%, 0));
+	background: -o-linear-gradient(left, hsla(216, 35%,40%,.15) 70%, hsla(205, 24%, 58%,0));
+	background: linear-gradient(left, hsla(216, 35%,40%,.15) 70%, hsla(205, 24%, 58%,0));
+}
+
+/* Inline code */
+.code-embed-wrapper :not(pre) > code[class*="language-"],
+#bbpress-forums .code-embed-wrapper :not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+}
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: slategray;
+}
+.token.punctuation {
+	color: #f8f8f2;
+}
+.namespace {
+	opacity: .7;
+}
+.token.property,
+.token.tag,
+.token.constant,
+.token.symbol,
+.token.deleted {
+	color: #f92672;
+}
+.token.boolean,
+.token.number {
+	color: #ae81ff;
+}
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+	color: #a6e22e;
+}
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string,
+.token.variable {
+	color: #f8f8f2;
+}
+.token.atrule,
+.token.attr-value {
+	color: #e6db74;
+}
+.token.keyword {
+	color: #66d9ef;
+}
+.token.regex,
+.token.important {
+	color: #fd971f;
+}
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+.token.entity {
+	cursor: help;
+}
+
+/* Pastacode add */
+.code-embed-wrapper,
+#bbpress-forums .code-embed-wrapper {
+	position: relative;
+	padding: 1.5em 0;
+}
+.code-embed-wrapper .code-embed-infos,
+#bbpress-forums .code-embed-wrapper .code-embed-infos {
+	position: relative;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	display: block;
+	text-align: center;
+	margin-bottom:-1px;
+}
+.code-embed-wrapper pre + .code-embed-infos,
+#bbpress-forums .code-embed-wrapper pre + .code-embed-infos{
+	margin-bottom:0;
+}
+.code-embed-wrapper .code-embed-infos a,
+.code-embed-wrapper .code-embed-infos span,
+#bbpress-forums .code-embed-wrapper .code-embed-infos a,
+#bbpress-forums .code-embed-wrapper .code-embed-infos span {
+	color: #272822;
+	padding: .25em 1em;
+	font-family: verdana, helvetica, sans-serif;
+	text-decoration: none;
+	box-shadow:none;
+	border-top: 4px solid #45473A;
+	margin: 0 0.5em;
+	display: inline-block;
+}
+.code-embed-wrapper pre + .code-embed-infos a,
+.code-embed-wrapper pre + .code-embed-infos span,
+#bbpress-forums .code-embed-wrapper pre + .code-embed-infos a,
+#bbpress-forums .code-embed-wrapper pre + .code-embed-infos span {
+	border-bottom: 4px solid #45473A;
+	border-top: 0;
+}
+.code-embed-wrapper .code-embed-infos a:hover,
+.code-embed-wrapper .code-embed-infos a:focus,
+.code-embed-wrapper .code-embed-infos a:active,
+#bbpress-forums .code-embed-wrapper .code-embed-infos a:hover,
+#bbpress-forums .code-embed-wrapper .code-embed-infos a:focus,
+#bbpress-forums .code-embed-wrapper .code-embed-infos a:active {
+	color: #FFF;
+	background: #272822;
+	border-color: #272822;
+	text-decoration: none;
+	box-shadow:none;
+}
+
+/* Plugin styles:Line Numbers */
+.code-embed-wrapper pre[class*="language-"].line-numbers,
+#bbpress-forums .code-embed-wrapper pre[class*="language-"].line-numbers {
+	padding-left: 0;
+	padding-right: 0;
+}
+.code-embed-wrapper pre[class*="language-"].line-numbers code,
+#bbpress-forums .code-embed-wrapper pre[class*="language-"].line-numbers code {
+	padding-left: 3.8em;
+	display:block;
+}
+.code-embed-wrapper pre[class*="language-"].line-numbers .line-numbers-rows,
+#bbpress-forums .code-embed-wrapper pre[class*="language-"].line-numbers .line-numbers-rows {
+	left: 0;
+}
+
+.code-embed-wrapper code.code-embed-code,
+#bbpress-forums .code-embed-wrapper code.code-embed-code{
+	position:relative;
+	display:block;
+}
+
+.code-embed-wrapper code.code-embed-code ~ .line-highlight,
+#bbpress-forums .code-embed-wrapper code.code-embed-code ~ .line-highlight{
+	margin:1em -1em;
+}
+
+.code-embed-wrapper .line-numbers code.code-embed-code ~ .line-highlight,
+#bbpress-forums .code-embed-wrapper .line-numbers code.code-embed-code ~ .line-highlight{
+	margin:1em 0;
+}
